@@ -1,0 +1,155 @@
+.resume{
+    width: 90%;
+    margin: 30px auto;
+}
+.resume-flex{
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+}
+.resume-contact{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 65%;
+    padding: 20px;
+    border-radius: 20px;
+}
+.resume-contact h2{
+    font-size: 35px;
+}
+.resume-contact-flex{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    
+}
+.resume-icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.resume-icon h3{
+    font-size: 30px;
+}
+.resume-info{
+    background-color: rgba(203, 143, 31, 0.653);
+    margin-bottom: 15px;
+    padding:20px 50px;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+}
+.resume-info > *{
+    margin-bottom: 10px;
+}
+.resume-info p{
+    color: #fff;
+}
+.resume-info h3{
+    font-size: 20px;
+}
+.res-icon{
+    color:rgba(203, 143, 31, 0.653) ;
+    font-size: 35px;
+}
+.carts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    
+}
+.Work-skils{
+    margin-top: 20px;
+}
+.Work-skils h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cart{
+    width: 23%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    background-color:rgba(203, 143, 31, 0.653) ;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+}
+.social a{
+    color: rgba(203, 143, 31, 0.653);
+}
+.social a:hover{
+    color: #fff;
+}
+@media screen and (max-width:480px){
+    
+    .resume-flex{
+        flex-direction: column;
+    }
+    .resume-contact{
+        width: 90%;
+        margin-top: 40px;
+    }
+    .resume-contact-flex{
+        flex-direction: column;
+        gap: 5px;
+        align-items: initial;
+        
+    }
+    .resume-info{
+        width: 60%;
+        display: block;
+        margin: 10px auto;
+    }
+    .carts{
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+        
+    }
+    .Work-skils h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .cart{
+        width: 90%;
+    }
+}
+@media screen and (min-width:481px) and (max-width:1290px){
+    .resume-flex{
+        flex-direction: column;
+    }
+    .resume-contact{
+        width: 90%;
+        margin-top: 40px;
+    }
+    .resume-contact-flex{
+        flex-direction: column;
+        gap: 5px;
+        align-items: initial;
+        
+    }
+    .resume-info{
+        width: 60%;
+        display: block;
+        margin: 10px auto;
+    }
+    .carts{
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+        
+    }
+    .Work-skils h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .cart{
+        width: 90%;
+    }
+}

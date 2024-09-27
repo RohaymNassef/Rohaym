@@ -1,0 +1,229 @@
+.home{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+    gap: 30px;
+}
+.homeee{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 65%;
+    padding: 20px;
+    border-radius: 20px;
+    height: 70vh;
+}
+.homeee > *{
+    margin-bottom: 20px;
+}
+.what-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.what-top-left div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.what-top-right div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.what-top-left{
+    background-color: rgba(159, 111, 21, 0.953);
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+.left-icon{
+    color: #fff;
+}
+.what-top-left p{
+    color: #fff;
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+
+}
+.what-top-right{
+    background-color: rgba(203, 143, 31, 0.653);
+    padding: 10px;
+    border-radius: 20px;
+}
+.what-top-right p{
+    color: #fff;
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+
+}
+.what-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.what-bottom-left{
+    background-color: rgba(203, 143, 31, 0.653);
+    padding:12px 10px;
+    border-radius: 20px;
+    width: 60%;
+}
+.what-bottom-left div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.what-bottom-left p{
+    color: #fff;
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+}
+.what-bottom-right{
+    background-color: rgba(159, 111, 21, 0.953);
+    padding:20px 10px;
+    border-radius: 20px;
+}
+.what-bottom-right div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.what-bottom-right p{
+    color: #fff;
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+}
+.home-about p{
+    color: #777;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+.what-flex{
+    margin-top: 10px;
+}
+.what-social{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin:25px auto;
+    font-size: 25px;
+}
+.what-social div{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding:10px 10px;
+    line-height: 10px;
+    border-radius: 15px;
+    transition: 0.5s;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgba(203, 143, 31, 0.653);
+}
+.what-social div:hover{
+    background-color: rgba(203, 143, 31, 0.653);
+    color: #fff;
+}
+.what-social a{
+    color: rgba(203, 143, 31, 0.653);
+}
+.what-social a:hover{
+    color: #fff;
+}
+.line:empty{
+    width: 200px;
+    height: 5px;
+    background-color:rgba(203, 143, 31, 0.653) ;
+    border-radius: 20px;
+
+}
+.hhhhhh{
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+}
+.hwork{
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+}
+@media screen and (max-width:480px){
+    .home{
+        flex-direction: column;
+    }
+    .homeee{
+        width: 90%;
+    }
+    .what-top{
+        flex-direction: column;
+    }
+    .what-bottom{
+       flex-direction: column-reverse;
+    }
+    .what-bottom-left{
+        width: 94%;
+    }
+    .sidebar{
+        width: 90%;
+        position: relative;
+        margin-top: 10px;
+    }
+    .image img{
+        right: 120px;
+    }
+    .hhhhhh{
+        font-size: 20px;
+    }
+    .homeee{
+        margin-top: 40px;
+        height: max-content;
+    }
+    .home-about p{
+        text-align: center;
+    }
+}
+@media screen and (min-width:481px) and (max-width:1290px){
+    .home{
+        flex-direction: column;
+    }
+    .homeee{
+        width: 90%;
+    }
+    .what-top{
+        flex-direction: column;
+    }
+    .what-bottom{
+       flex-direction: column-reverse;
+    }
+    .what-bottom-left{
+        width: 98%;
+    }
+    .what-bottom-right{
+        width: 98%;
+    }
+    .sidebar{
+        width: 90%;
+        position: relative;
+        margin-top: 10px;
+    }
+    .image img{
+        right: 37%;
+    }
+    .homeee{
+        margin-top: 40px;
+        height: max-content;
+    }
+    .home-about p{
+        text-align: center;
+    }
+}

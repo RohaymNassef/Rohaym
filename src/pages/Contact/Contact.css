@@ -1,0 +1,56 @@
+.contact{
+    width: 90%;
+    margin: 30px auto;
+}
+.contact-flex{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.contact-contant{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 65%;
+    padding: 20px;
+    border-radius: 20px;
+}
+.contact-contant form input{
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    padding:15px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(203, 143, 31, 0.653);
+    outline: none;
+}
+.contact-contant form button{
+    display: block;
+    margin: 20px auto;
+    width: 60%;
+}
+.contact-contant h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.p-formik{
+    color: red;
+    text-align: center;
+    font-size: 18px;
+}
+@media screen and (max-width:480px){
+    .contact-flex{
+        flex-direction: column;
+    }
+    .contact-contant{
+        width: 90%;
+        margin-top: 40px;
+    }
+}
+@media screen and (min-width:481px) and (max-width:1290px){
+    .contact-flex{
+        flex-direction: column;
+    }
+    .contact-contant{
+        width: 90%;
+        margin-top: 40px;
+    }
+}

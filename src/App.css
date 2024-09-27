@@ -1,0 +1,38 @@
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.app{
+    background-color: #fff;
+}
+.app-dark{
+    background-color: black;
+    color:#fff;
+    
+}
+.app-dark .navbar{
+    /* background-color: #000; */
+    margin:0px auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #222;
+    
+}
+.app-dark .project-contant{
+    background-color: #222;
+}
+.app-dark .sidebar{
+    background-color: #222;
+}
+.app-dark .homeee{
+    background-color: #222;
+}
+.app-dark .resume-contact{
+    background-color: #222;
+}
+.app-dark .contact-contant{
+    background-color: #222;
+}
+.app-dark body{
+    background-color: #222 !important;
+}
