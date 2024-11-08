@@ -12,6 +12,7 @@ import img4 from "../../images/5.png";
 import img5 from "../../images/6.png";
 import img6 from "../../images/7.png";
 import img7 from "../../images/8.png";
+import img8 from "../../images/9.png";
 
 import { Link } from 'react-router-dom';
 
@@ -56,10 +57,13 @@ const Project = () => {
             <div className="works">
                 <h2 className='hwork'>Work <div className='line'></div> </h2>
                 <div className="work">
+                <Link to={"https://alhady.vercel.app/"}> <button className='pro'><span class="text"><img src={img2} alt="" /></span><span>Islamic Project To Deal With API</span></button></Link>
+                </div>
+                <div className="work">
                 <Link to={"https://multy-shop.vercel.app/"}><button className='pro'><span class="text"><img src={img1} alt="" /></span><span>ُُEcommerce By React Js</span></button></Link>
                 </div>
                 <div className="work">
-                <Link to={"https://alsona-ashen.vercel.app/"}> <button className='pro'><span class="text"><img src={img2} alt="" /></span><span>Islamic Project To Deal With API</span></button></Link>
+                <Link to={"https://joker-kpuv.vercel.app/"}>   <button className='pro'><span class="text"><img src={img8} alt="" /></span><span>Ecommerce By CSS</span></button></Link>
                 </div>
                 <div className="work">
                 <Link to={"https://rohaymnassef.github.io/Game-oop-/"}>   <button className='pro'><span class="text"><img src={img3} alt="" /></span><span>Project To Deal With OOP</span></button></Link>
