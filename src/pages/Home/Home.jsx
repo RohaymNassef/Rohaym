@@ -14,6 +14,16 @@ const Home = () => {
     setLoding(false);
   },1500)
   return (
+    <>
+    {loading ? 
+      <ScaleLoader className='spiner'
+      color={"rgba(203, 143, 31, 0.653)"}
+      loading={loading}
+      // cssOverride={override}
+      size={30}
+      aria-label="Loading Spinner"
+      data-testid="loader"
+      />:
     <div className='home'>
        
     <div className="sidebar">
@@ -44,20 +54,11 @@ const Home = () => {
           </div>
           <div className='resume'>
             
-            <Link to={"https://drive.google.com/file/d/1BW9q8jQ42KnIjNJKtCtiDUS3S3HVU9SO/view?usp=drivesdk"}><button> Download My Resume</button></Link>
-            
+            <Link to={"https://drive.google.com/file/d/1BW9q8jQ42KnIjNJKtCtiDUS3S3HVU9SO/view?usp=drivesdk"}><button> Download My Resume</button></Link>    
           </div>
         </div>
       </div>
-      {loading ? 
-      <ScaleLoader className='spiner'
-      color={"rgba(203, 143, 31, 0.653)"}
-      loading={loading}
-      // cssOverride={override}
-      size={30}
-      aria-label="Loading Spinner"
-      data-testid="loader"
-      />:
+
       <div className="homeee">
       <div className='home-about'>
       <h1  className='hhhhhh'>About Me <div className='line'></div> </h1>
@@ -109,14 +110,11 @@ const Home = () => {
           <div><Link to={"https://www.linkedin.com/feed/"}><FaLinkedin/></Link></div>
         </div>
       </div>
-
-
-
-
       </div>
-      }
-      
+
     </div>
+  }
+    </>
   );
 }
 
