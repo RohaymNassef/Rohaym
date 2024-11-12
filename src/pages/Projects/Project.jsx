@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Project.css";
 import img from "../../images/1.png";
 import {FaLinkedin} from "react-icons/fa6";
@@ -15,8 +15,12 @@ import img7 from "../../images/8.png";
 import img8 from "../../images/9.png";
 
 import { Link } from 'react-router-dom';
-
+import ScaleLoader from "react-spinners/ScaleLoader";
 const Project = () => {
+  const [loading, setLoding] = useState(true);
+  setTimeout(()=>{
+    setLoding(false);
+  },1500)
   return (
     <div className='projects'>
         <div className="projects-flex">
@@ -53,6 +57,15 @@ const Project = () => {
           </div>
         </div>
       </div>
+      {loading ? 
+      <ScaleLoader className='spiner'
+      color={"rgba(203, 143, 31, 0.653)"}
+      loading={loading}
+      // cssOverride={override}
+      size={30}
+      aria-label="Loading Spinner"
+      data-testid="loader"
+      />:
       <div className="project-contant">
             <div className="works">
                 <h2 className='hwork'>Work <div className='line'></div> </h2>
@@ -83,7 +96,9 @@ const Project = () => {
 
             </div>
       </div>
+      }
         </div>
+      
     </div>
   );
 }

@@ -9,16 +9,19 @@ import { Link } from 'react-router-dom';
 import axios from "axios";
 import { Formik, useFormik } from 'formik';
 import emailjs from '@emailjs/browser';
+import ScaleLoader from "react-spinners/ScaleLoader";
 const Contact = () => {
 
 
 
-  const [spinner, setSpinner] = useState(true);
   const [sending, setSending] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-
+  const [loading, setLoding] = useState(true);
+  setTimeout(()=>{
+    setLoding(false);
+  },1500)
 
   const formik = useFormik({
     initialValues : {
@@ -116,6 +119,15 @@ const Contact = () => {
           </div>
         </div>
         </div>
+        {loading ? 
+      <ScaleLoader className='spiner'
+      color={"rgba(203, 143, 31, 0.653)"}
+      loading={loading}
+      // cssOverride={override}
+      size={30}
+      aria-label="Loading Spinner"
+      data-testid="loader"
+      />:
         <div className="contact-contant">
             <h2>Contact Me : </h2>
             <form onSubmit={formik.handleSubmit}>
@@ -163,6 +175,7 @@ const Contact = () => {
           {errorMessage && <p className="error">{errorMessage}</p>}
             </form>
         </div>
+        }
         </div>
         
     </div>

@@ -179,7 +179,7 @@
         margin-top: 10px;
     }
     .image img{
-        right: 120px;
+        right: 35%;
     }
     .hhhhhh{
         font-size: 20px;
@@ -192,7 +192,7 @@
         text-align: center;
     }
 }
-@media screen and (min-width:481px) and (max-width:1290px){
+@media screen and (min-width:481px) and (max-width:800px){
     .home{
         flex-direction: column;
     }

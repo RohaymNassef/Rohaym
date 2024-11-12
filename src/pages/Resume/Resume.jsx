@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Resume.css";
 import img from "../../images/1.png";
 import {FaLinkedin} from "react-icons/fa6";
@@ -9,8 +9,12 @@ import { BiLogoJquery } from "react-icons/bi";
 import { PiFileSqlLight ,PiFileCppBold} from "react-icons/pi";
 import { SiMysql } from "react-icons/si";
 import { Link } from 'react-router-dom';
-
+import ScaleLoader from "react-spinners/ScaleLoader";
 const Resume = () => {
+    const [loading, setLoding] = useState(true);
+  setTimeout(()=>{
+    setLoding(false);
+  },1500)
   return (
     <div className='resume'>
         <div className="resume-flex">    
@@ -47,6 +51,15 @@ const Resume = () => {
           </div>
         </div>
       </div>
+      {loading ? 
+      <ScaleLoader className='spiner'
+      color={"rgba(203, 143, 31, 0.653)"}
+      loading={loading}
+      // cssOverride={override}
+      size={30}
+      aria-label="Loading Spinner"
+      data-testid="loader"
+      />:
         <div className="resume-contact">
             <h2 className='hhhhhh'>Resume <div className='line'></div> </h2>
             <div className="resume-contact-flex">
@@ -141,6 +154,7 @@ const Resume = () => {
 
             </div>
         </div>
+        }
       </div>
     </div>
   );

@@ -7,8 +7,12 @@ import { IoLocationSharp , IoSettingsSharp ,IoPhonePortrait } from "react-icons/
 import { MdEmail , MdOutlineSettingsEthernet} from "react-icons/md";
 import { Link } from 'react-router-dom';
 
-
+import ScaleLoader from "react-spinners/ScaleLoader";
 const Home = () => {
+  const [loading, setLoding] = useState(true);
+  setTimeout(()=>{
+    setLoding(false);
+  },1500)
   return (
     <div className='home'>
        
@@ -45,7 +49,15 @@ const Home = () => {
           </div>
         </div>
       </div>
-    
+      {loading ? 
+      <ScaleLoader className='spiner'
+      color={"rgba(203, 143, 31, 0.653)"}
+      loading={loading}
+      // cssOverride={override}
+      size={30}
+      aria-label="Loading Spinner"
+      data-testid="loader"
+      />:
       <div className="homeee">
       <div className='home-about'>
       <h1  className='hhhhhh'>About Me <div className='line'></div> </h1>
@@ -102,6 +114,7 @@ const Home = () => {
 
 
       </div>
+      }
       
     </div>
   );

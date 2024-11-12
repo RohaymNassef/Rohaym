@@ -120,7 +120,7 @@
         width: 90%;
     }
 }
-@media screen and (min-width:481px) and (max-width:1290px){
+@media screen and (min-width:481px) and (max-width:800px){
     .resume-flex{
         flex-direction: column;
     }
