@@ -15,15 +15,7 @@ const Home = () => {
   },1500)
   return (
     <>
-    {loading ? 
-      <ScaleLoader className='spiner'
-      color={"rgba(203, 143, 31, 0.653)"}
-      loading={loading}
-      // cssOverride={override}
-      size={30}
-      aria-label="Loading Spinner"
-      data-testid="loader"
-      />:
+    
     <div className='home'>
        
     <div className="sidebar">
@@ -58,7 +50,15 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      {loading ? 
+      <ScaleLoader className='spiner'
+      color={"rgba(203, 143, 31, 0.653)"}
+      loading={loading}
+      // cssOverride={override}
+      size={30}
+      aria-label="Loading Spinner"
+      data-testid="loader"
+      />:
       <div className="homeee">
       <div className='home-about'>
       <h1  className='hhhhhh'>About Me <div className='line'></div> </h1>
@@ -111,9 +111,9 @@ const Home = () => {
         </div>
       </div>
       </div>
-
+}
     </div>
-  }
+  
     </>
   );
 }

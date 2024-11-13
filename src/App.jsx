@@ -7,6 +7,7 @@ import Home from './pages/Home/Home';
 import Resume from './pages/Resume/Resume';
 import Project from './pages/Projects/Project';
 import Contact from './pages/Contact/Contact';
+import ScaleLoader from "react-spinners/ScaleLoader";
 const App = () => {
   let [dark , setDark] = useState(false);
   function isdark(){
@@ -24,6 +25,16 @@ const App = () => {
     setLoading(false)
   },5000)
   return (
+    <>
+    {loading ? 
+      <ScaleLoader className='spiner'
+      color={"rgba(203, 143, 31, 0.653)"}
+      loading={loading}
+      // cssOverride={override}
+      size={30}
+      aria-label="Loading Spinner"
+      data-testid="loader"
+      />:
     <div className={dark ? "app-dark" : "app"}>
       <BrowserRouter>
       <Navbar dadrk = {dark} isdark = {isdark}/>
@@ -36,6 +47,8 @@ const App = () => {
       <Footer/>
       </BrowserRouter>
     </div>
+}
+    </>
   );
 }
 
